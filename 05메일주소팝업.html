@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>메일주소</title>
+</head>
+<body>
+    <script>
+
+        function OnloadImg(url){
+       
+         var img=new Image();
+       
+         img.src=url;
+       
+         var img_width=img.width;
+       
+         var win_width=img.width+25;
+       
+         var height=img.height+30;
+       
+        //  var OpenWindow=window.open('','_blank', 'width='+img_width+', height='+height+', menubars=no, scrollbars=auto');
+       
+        //  OpenWindow.document.write("<style>body{margin:0px;}</style><img src='"+url+"' width='"+win_width+"'>");
+       
+        }
+       
+       </script>
+       
+       <img src="images/email.png" onclick="OnloadImg(this.src)">
+
+
+</style>
+</body>
+</html>

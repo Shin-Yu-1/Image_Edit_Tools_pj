@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이미지 홈페이지</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    
+    <div class="container">
+        <div class="box">
+            <a href="01자기소개페이지.html">
+                <img src="https://source.unsplash.com/1000x800"></a>
+          <span style="color: aliceblue;">Introduce</span>
+        </div>
+        <div class="box">
+            <a href="02raw그림판.html">
+            <img src="https://source.unsplash.com/1000x802"></a>
+          <span style="color: aliceblue;">Black-and-white edit</span>
+        </div>
+        <div class="box">
+            <a href="03컬러그림판(수정).html">
+            <img src="https://source.unsplash.com/1000x804"></a>
+            <span style="color: aliceblue;">Color Paint</span>
+        </div>
+        <div class="box">
+            <a href="04컬러 영역선택.html">
+            <img src="https://source.unsplash.com/1000x806"></a>
+          <span style="color: aliceblue;">Partial effect edit</span>
+        </div>
+      </div>
+      <style>
+          .container {
+        display: flex;
+        width: 100%;
+        padding: 4% 2%;
+        box-sizing: border-box;
+        height: 100vh;
+        }
+
+        .box {
+        flex: 1;
+        overflow: hidden;
+        transition: .5s;
+        margin: 0 2%;
+        box-shadow: 0 20px 30px rgba(0,0,0,.1);
+        line-height: 0;
+        }
+        .box > a {
+        font-size: 3.8vh;
+        display: block;
+        text-align: center;
+        height: 10vh;
+        line-height: 2.6;
+        }
+
+        .box > img {
+        width: 200%;
+        height: calc(100% - 10vh);
+        object-fit: cover; 
+        transition: .5s;
+        }
+
+        .box > span {
+        font-size: 3.8vh;
+        display: block;
+        text-align: center;
+        height: 10vh;
+        line-height: 2.6;
+        }
+        .box:hover { flex: 1 1 50%; }
+        .box:hover > img {
+        width: 100%;
+        height: 100%;
+        }
+      </style>
+</body>
+</html>
